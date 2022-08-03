@@ -2,6 +2,7 @@
     font-family: noto sans ;
     src: url(./Noto_Sans/NotoSans-SemiBold.ttf);
 }
+
 html{
     overflow-x: hidden;
 }
@@ -177,6 +178,21 @@ article .img2{
     position: relative;
     bottom: 1.5rem;
    
+}
+.pricediv1 ol li:nth-of-type(2), .pricediv1 ol li:nth-of-type(1){
+    list-style: url( ./check2\ \(2\).svg) ;
+}
+.pricediv1 ol li:nth-of-type(3), .pricediv1 ol li:nth-of-type(4), .pricediv1 ol li:nth-of-type(5){
+    list-style: url(./x.svg);
+}
+.pricediv2 ol li:nth-of-type(1), .pricediv2 ol li:nth-of-type(2), .pricediv2 ol li:nth-of-type(3), .pricediv2 ol li:nth-of-type(4){
+    list-style: url(./check2\ \(2\).svg);
+}
+.pricediv2 ol li:nth-of-type(5){
+    list-style: url(./x.svg);
+}
+.pricediv3 ol{
+    list-style: url(./check2\ \(2\).svg);
 }
 .pricediv1 h3, .pricediv2 h3, .pricediv3 h3{
     font-size: 2rem;
