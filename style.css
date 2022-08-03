@@ -1,8 +1,17 @@
+@font-face {
+    font-family: noto sans ;
+    src: url(./Noto_Sans/NotoSans-SemiBold.ttf);
+}
+html{
+    overflow-x: hidden;
+}
 body{
     margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
     height: auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(199, 241, 255);
     
 }
 main{
@@ -12,26 +21,29 @@ main{
 nav{
     height: 10vh;
 }
-.landing-area{
-    /* width: 100%; */
-    /* justify-content: center;
-    align-items: center; */
-    
-
+nav label{
+    color: rgb(24, 168, 216);
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-family: noto sans ;
 }
+
 .landing-img{
-    height: 40vh;
+    height: 23vh;
     margin: 0 auto;
     /* width: 50vw; */
     
 
 }
 .landing-text{
-    height: 40vh;
+    height: 37vh;
     width: 100%;
     margin-top: 8rem;
    text-align: center;
    
+}
+.landing-text p{
+    padding-left: 1rem;
 }
 .landing-text h1{
     text-transform: uppercase;
@@ -39,66 +51,71 @@ nav{
 }
 
 .circle{
-    width: 18rem;
-    height:18rem;
+    width: 10rem;
+    height:10rem;
     background-color: rgb(24, 168, 216);
     border-radius: 100%;
-    /* margin-top: 5rem; */
+    margin-top: 6rem;
     margin: 0 auto;
     position: relative;
-    top: 7rem;
-    
-}
+    top: 3.5rem;
+    /* top: 10rem; */
+} 
+
 .circle img{
     position: relative;
     right: 3rem;
-    bottom: 7rem
+   bottom: 3rem;
+   /* margin: 0 auto; */
 }
 .know-more{
     height: 2rem;
-    width: 7rem;
+    width: 8rem;
     background: linear-gradient(to right top, rgb(76, 205, 248), rgb(39, 154, 192)  );
     border: none;
     border-radius: 30px;
     position: relative;
     bottom: 2px;
     color: white;
+    font-size: 1rem;
 }
 article .circle2{
-    width: 18rem;
-    height: 18rem;
-    background-color: white;
+    width: 14rem;
+    height: 14rem;
+    background-color: ghostwhite;
     border-radius: 100%;
     margin: 0 auto;
+    /* box-shadow: rgba(43, 43, 43, 0.423) 0px 6px 12px -2px, rgba(0, 0, 0, 0.451) 0px 3px 7px -3px; */
 }
 
 .square{
-    width: 6.7rem;
-    height: 6.7rem;
+    width: 5rem;
+    height: 5rem;
     background-color: rgb(24, 168, 216);
-    border-radius: 0px 40px 0 40px;
+    border-radius: 0px 30px 0 30px;
     position: relative;
     top: 30px;
-    right: 2rem;
+    right: 1.6rem;
 }
 .square h5{
-    font-size: 30px;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
-    padding-top: 17px;
+    padding-top: 0.3rem;
 }
 .square span{
     position: relative;
      /* top: 10px; */
      bottom: 45px;
-     left: 30px;
+     left: 1rem;
      color: white;
+     font-size: 0.8rem;
 
 }
 article .img2{
     position: relative;
-    bottom: 5rem;
-    right: 2rem;
+    bottom: 4rem;
+    right: 1.8rem;
 
 }
 .article-text {
@@ -120,7 +137,7 @@ article .img2{
 
 .furniture-img, .mopping-img, .toilet-img, .window-img{
     border-radius: 100%;
-    border: 10px solid white;
+    border: 10px solid rgb(76, 205, 248);
     margin: 2rem;
 }
 .whatwedo-img figcaption{
@@ -128,23 +145,236 @@ article .img2{
     font-weight: 400;
     
 }
+.prices{
+    margin-top: 12rem;
+}
+.prices h4{
+    font-size: 1.5rem;
+    text-align: center;
+}
 .pricediv1, .pricediv2, .pricediv3{
     margin: 0 auto;
 }
 
+
 .pricediv1, .pricediv2, .pricediv3{
     width: 15rem;
-    height: 30rem;
-    background-color: ghostwhite;
-    border-radius: 30px;
+    height: 29rem;
+    background-color: rgb(39, 154, 192);
+    border-radius: 40px;
+    gap: 1px;
     box-shadow: rgba(43, 43, 43, 0.423) 0px 6px 12px -2px, rgba(0, 0, 0, 0.451) 0px 3px 7px -3px;
     
 }
 .pricediv1 ol, .pricediv2 ol, .pricediv3 ol{
-    margin-top: 40px;
-    line-height: 30px;
+    line-height: 1rem;
     text-transform: capitalize;
-    font-size: 1.3rem;
-    line-height: 3rem;
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    color: white;
+    position: relative;
+    bottom: 1.5rem;
    
+}
+.pricediv1 h3, .pricediv2 h3, .pricediv3 h3{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+}
+.smallcircle{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50px;
+    background-color: white; 
+    box-shadow:5px 5px 5px  rgb(79, 79, 79);
+    margin-left: 4rem;
+    position: relative;
+    bottom: 1.5rem;
+}
+.smallcircle h5{
+    position: relative;
+    top: 20px;
+    font-size: 28px;
+    left: 15px;
+    color: rgb(24, 168, 216);
+}
+.smallcircle span{
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+.getstarted{
+    width: 9rem;
+    background-color: white;
+    border-radius: 40px;
+    position: relative;
+    bottom: 1.5rem;
+  margin-left: 3rem;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border: none;
+    color: rgb(39, 154, 192);
+}
+
+.team{
+    margin-top: 7rem;
+}
+.team h3{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.team-circle{
+    width: 14rem;
+    height: 14rem;
+    background-color: rgb(24, 168, 216);
+    border-radius: 50%;
+    margin: 0 auto;
+  
+}
+.team-circle2{
+    width: 14rem;
+    height: 14rem;
+    background-color: rgb(24, 168, 216);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+.team-circle3{
+    width: 14rem;
+    height: 14rem;
+    background-color: rgb(24, 168, 216);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+.team-circle3 img{
+    position: relative;
+    left: 2.5rem;
+    bottom: 1.3rem;
+}
+.team-circle2 img{
+    position: relative;
+    left: 2.2rem;
+    /* top: 0.2rem; */
+}
+.team-circle img{
+    position: relative;
+    left: 2.5rem;
+}
+
+.leader-info, .carcleaner-info, .cleaner-info{
+    width: 13rem;
+    height: 80px;
+    background-color: rgb(24, 168, 216);
+    position: relative;
+    bottom: 4rem;
+    left: 0.4rem;
+    border-radius: 0 40px 0 40px;
+
+}
+.leader-info h5, .carcleaner-info h5, .cleaner-info h5{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    position: relative;
+    top: 10px;
+}
+.leader-info span, .carcleaner-info span {
+    position: relative;
+    bottom: 20px;
+    left: 56px;
+    color: white;
+
+}
+.cleaner-info{
+    position: relative;
+    bottom: 7rem;
+    left: 0.5rem;
+    color: white;
+}
+.cleaner-info span{
+    position: relative;
+    bottom: 20px;
+    left: 4.5rem;
+    color: white
+}
+.question{
+    margin-top: 6rem;
+}
+
+.reach{
+    display: flex;
+}
+.email-parent, .phone-parent, .address-parent{
+     display: flex;
+     font-size: 0.8rem;
+     gap: 1rem;
+     padding-left: 2rem;
+}
+
+
+.container{
+    width: 90%;
+    max-width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 10px #00000010;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.formgroup{
+    width: 90%;
+    margin-top: 1.5rem;
+    margin-left: 15px;
+
+}
+.formgroup input, .formgroup textarea{
+    width: 90%;
+    padding: 7px;
+    border: 1px solid grey;
+    margin-top: 5px;
+   
+}
+
+textarea{
+    resize: vertical;
+}
+.container button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+    color: white;
+    background-color: rgb(24, 168, 216);
+    border-radius: 0 0 20px 20px;
+}
+.container button:hover{
+    background-color: rgb(86, 205, 245);
+}
+footer{
+    background-color: rgb(24, 168, 216);
+    margin-top: 3rem;
+    
+}
+footer h3{
+    text-align: center;
+    color: white;
+   position: relative;
+   top: 0.5rem;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+footer svg{
+    padding: 0.4rem;
+    color: white;
+}
+footer div p{
+    color: white;
+    text-align: center;
+  margin: 0 auto;
 }
