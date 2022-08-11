@@ -18,14 +18,73 @@ main{
     
     margin: auto;
 }
+
 nav{
-    height: 10vh;
+  
 }
 nav label{
     color: rgb(24, 168, 216);
     font-size: 2rem;
     padding-left: 1rem;
     font-family: noto sans ;
+}
+nav{
+    display: flex;
+    gap: 20rem;
+    /* position: relative; */
+    z-index: 1;
+    /* bottom: 36.5rem; */
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(199, 241, 255);
+    
+}
+nav label{
+    position: relative;
+    left: 0.6rem;
+    top: 0.7rem;
+}
+
+nav ul{
+    /* float: right; */
+   margin: 20px;
+   padding-left: 8rem;
+
+}
+nav ul li{
+    display: inline-block;
+    /* line-height: 80px; */
+    /* margin: 0 5px; */
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1.3rem;
+    border-radius: 3px;
+    
+
+}
+a.active,a:hover{
+    background: rgb(24, 168, 216);
+    transition: .5s;
+    color: white;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    position: relative;
+    left: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 
 .landing-img{
@@ -34,6 +93,16 @@ nav label{
     /* width: 50vw; */
     
 
+}
+.landing-area{
+    position: relative;
+    top: 10rem;
+    margin-bottom: 10rem;
+}
+.landing-area img{
+    width: 20rem;
+    position: relative;
+    
 }
 .landing-text{
     height: 37vh;
@@ -116,6 +185,7 @@ article .img2{
     position: relative;
     bottom: 4rem;
     right: 1.8rem;
+    width: 257px;
 
 }
 .article-text {
@@ -137,6 +207,9 @@ article .img2{
     text-align: center;
     margin-top: 5rem;
 }
+.article2 span{
+    color: rgb(42, 174, 219);
+}
 
 .furniture-img, .mopping-img, .toilet-img, .window-img{
     border-radius: 100%;
@@ -156,17 +229,13 @@ article .img2{
     text-align: center;
 }
 .pricediv1, .pricediv2, .pricediv3{
-    margin: 0 auto;
-}
-
-
-.pricediv1, .pricediv2, .pricediv3{
     width: 15rem;
     height: 29rem;
     background-color: rgb(42, 174, 219);
-    border-radius: 40px;
+    border-radius: 10px;
     gap: 1px;
     box-shadow: rgba(43, 43, 43, 0.423) 0px 6px 12px -2px, rgba(0, 0, 0, 0.451) 0px 3px 7px -3px;
+    margin: 0 auto;
     
 }
 .pricediv1 ol, .pricediv2 ol, .pricediv3 ol{
@@ -259,15 +328,18 @@ article .img2{
     position: relative;
     left: 2.5rem;
     bottom: 1.3rem;
+    width: 180px;
 }
 .team-circle2 img{
     position: relative;
     left: 2.2rem;
     /* top: 0.2rem; */
+   width: 160px;
 }
 .team-circle img{
     position: relative;
     left: 2.5rem;
+    width: 180px;
 }
 
 .leader-info, .carcleaner-info, .cleaner-info{
@@ -325,7 +397,7 @@ article .img2{
     width: 90%;
     max-width: 300px;
     background-color: white;
-    box-shadow: 0px 0px 20px 10px #00000010;
+    box-shadow: 0px 0px 0px 0px;
     border-radius: 20px;
     margin: 0 auto;
     margin-top: 4rem;
@@ -336,29 +408,45 @@ article .img2{
     margin-left: 15px;
 
 }
+
 .formgroup input, .formgroup textarea{
     width: 90%;
     padding: 7px;
-    border: 1px solid grey;
+    border: 1px solid ;
     margin-top: 5px;
+    border-radius: 40px;
+    background-color: transparent;
+    font-size: 1rem;
    
+   
+}
+#message{
+    border-radius: 20px;
 }
 
 textarea{
     resize: vertical;
 }
 .container button{
-    width: 100%;
+    width:9rem;
     border: none;
     padding: 10px;
     font-size: 20px;
     margin-top: 15px;
+    margin-left: 1rem;
     color: white;
     background-color: rgb(24, 168, 216);
-    border-radius: 0 0 20px 20px;
+    border-radius:40px;
 }
 .container button:hover{
     background-color: rgb(86, 205, 245);
+}
+.bi-telephone-fill, .bi-house-fill, .email-icon{
+    width: 25px;
+    fill: white;
+    background-color: rgb(42, 174, 219);
+    padding: 0.5rem;
+    border-radius: 40px;
 }
 footer{
     background-color: rgb(24, 168, 216);
@@ -380,9 +468,541 @@ footer h3{
 footer svg{
     padding: 0.4rem;
     color: white;
+    width: 20px;
 }
 footer div p{
     color: white;
     text-align: center;
   margin: 0 auto;
+}
+@media screen and (min-width:1008px){
+    body{
+        background-color: rgb(199, 241, 255);
+    }
+    nav{
+        height: 67px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+
+    }
+    nav label{
+        color: rgb(24, 168, 216);
+        font-size: 2rem;
+        padding-left: 11rem;
+        font-family: noto sans ;
+    }
+    .landing-area{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 19rem;
+        position: relative;
+        top: 4rem;
+     
+        
+    }
+    
+.landing-img{
+    /* height: 23vh; */
+    margin: 0 ;
+    /* width: 50vw; */
+    
+
+}
+.landing-text{
+    /* height: 37vh; */
+    width: 50%;
+    margin-top: 11rem;
+   text-align: left;
+
+   
+}
+.landing-text p{
+    padding-left: 1rem;
+    width: 30rem;
+    position: relative;
+    right: 0.8rem;
+    bottom: 1rem;
+}
+.landing-text h1{
+    text-transform: uppercase;
+    font-size: 2.45rem;
+    width: 50%;
+    line-height: 3.5rem;
+}
+
+.circle{
+    width: 20rem;
+    height:20rem;
+    background-color: rgb(24, 168, 216);
+    border-radius: 100%;
+    /* margin-top: 6rem; */
+    margin: 0 ;
+    position: relative;
+    top: 16rem;
+    right: 3rem;
+    margin-right: 15rem;
+    /* top: 10rem; */
+} 
+
+.circle img{
+    position: relative;
+    right: 10rem;
+   bottom: 13rem;
+   width: 38rem;
+   /* margin: 0 auto; */
+}
+
+.know-more{
+    height: 2.5rem;
+    width: 9rem;
+    background: linear-gradient(to right top, rgb(76, 205, 248), rgb(39, 154, 192)  );
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    bottom: 2px;
+    color: white;
+    font-size: 1.3rem;
+   
+}
+.article1{
+    display: flex;
+   position: relative;
+   margin-bottom: 18rem;
+    
+}
+
+
+article .circle2{
+    width: 26em;
+    height: 25em;
+    background-color: white;
+    border-radius: 100%;
+    margin: 0;
+    box-shadow: rgba(43, 43, 43, 0.423) 0px 6px 12px -2px, rgba(0, 0, 0, 0.451) 0px 3px 7px -3px;
+    margin-left: 15vw;
+}
+
+article .img2{
+    position: relative;
+    bottom: 8rem;
+    right: 2.5rem;
+    width: 28em;
+
+}
+.square{
+    width: 7rem;
+    height: 7rem;
+    background-color: rgb(24, 168, 216);
+    border-radius: 0px 35px 0 35px;
+    position: relative;
+    top: 30px;
+    right: 1.6rem;
+}
+.square h5{
+    font-size: 1.9rem;
+    color: white;
+    text-align: center;
+    padding-top: 0.3rem;
+}
+.square span{
+    position: relative;
+     /* top: 10px; */
+     bottom: 45px;
+     left: 1.5rem;
+     color: white;
+     font-size: 1rem;
+
+}
+.article-text {
+    padding-left: 5rem;
+    padding-right: 0;
+    
+}
+.article-text span{
+    color: rgb(39, 154, 192);
+    font-size: 1.3rem;
+    position: relative;
+    top: 1.5rem;
+}
+.article-text p{
+    line-height: 1.7rem;
+    width: 70%;
+    position: relative;
+    bottom: 1rem;
+    font-size: 1.1rem;
+}
+.article-text h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.article2{
+    text-align: center;
+    margin-top: 5rem;
+}
+.whatwedo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mopping:hover, .toilet:hover, .furniture:hover, .window:hover{
+    transform: scale(1.2);
+}
+.article2 span{
+    color: rgb(42, 174, 219);
+    font-size: 1.4rem;
+}
+.article2 h2{
+    font-size: 2rem;
+}
+.divs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    
+}
+.prices{
+    margin-top: 12rem;
+}
+.prices h4{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20rem;
+}
+.pricediv1, .pricediv2, .pricediv3{
+    width: 17rem;
+    height: 30.8rem;
+    background-color: white;
+    border-radius: 10px;
+    gap: 1px;
+    box-shadow: rgba(43, 43, 43, 0.423) 0px 6px 12px -2px, rgba(0, 0, 0, 0.451) 0px 3px 7px -3px;
+    margin: 0 ;
+    
+}
+.pricediv1 ol, .pricediv2 ol, .pricediv3 ol{
+    line-height: 1rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    color: black;
+    position: relative;
+    bottom: 1.5rem;
+    right: 1em;
+   
+}
+.pricediv1 ol, .pricediv2 ol, .pricediv3 ol li{
+    list-style: none;
+}
+.pricediv1 h3, .pricediv2 h3, .pricediv3 h3{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: rgb(39, 154, 192);
+}
+.smallcircle{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50px;
+    background-color: white; 
+    box-shadow:5px 5px 5px  rgb(79, 79, 79);
+    margin-left:5rem;
+    position: relative;
+    bottom: 1.5rem;
+}
+.smallcircle h5{
+    position: relative;
+    top: 20px;
+    font-size: 28px;
+    left: 15px;
+    color: rgb(24, 168, 216);
+}
+.smallcircle span{
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+.getstarted{
+    width: 9.5rem;
+    height: 3rem;
+    background-color: rgb(39, 154, 192);
+    border-radius: 40px;
+    position: relative;
+    bottom: 1.5rem;
+  margin-left: 4rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+}
+
+.team{
+    margin-top: 0;
+    position: relative;
+    top: 15rem;
+}
+.team h3{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.circle-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+.team-circle{
+    width: 22rem;
+    height: 22rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 ;
+    position: relative;
+    top: 4.5rem;
+  
+}
+.team-circle2{
+    width: 22rem;
+    height: 22rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 ;
+    margin-top: 7rem;
+}
+.team-circle3{
+    width: 22rem;
+    height: 22rem;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 ;
+    margin-top: 7rem;
+}
+.team-circle3 img{
+    position: relative;
+    left: 3rem;
+    bottom: 1.2rem;
+    width: 17rem;
+}
+.team-circle2 img{
+    position: relative;
+    left: 2.2rem;
+    /* top: 0.2rem; */
+    width: 15rem;
+}
+.team-circle img{
+    position: relative;
+    left: 2.5rem;
+    width: 17rem;
+}
+
+.leader-info, .carcleaner-info, .cleaner-info{
+    width: 14rem;
+    height: 80px;
+    background-color: rgb(24, 168, 216);
+    position: relative;
+    bottom: 4rem;
+    left: 3rem;
+    border-radius: 0 40px 0 40px;
+
+}
+.leader-info:hover, .carcleaner-info:hover, .cleaner-info:hover{
+    border-radius: 40px 0 40px 0;
+    transition: all .5s ease-in-out;
+}
+.question{
+    position: relative;
+    top: 13rem;
+}
+
+.leader-info h5, .carcleaner-info h5, .cleaner-info h5{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    position: relative;
+    top: 10px;
+}
+.leader-info span, .carcleaner-info span {
+    position: relative;
+    bottom: 20px;
+    left: 4rem;
+    color: white;
+
+}
+.cleaner-info{
+    position: relative;
+    bottom: 7rem;
+    left: 3rem;
+    color: white;
+}
+.cleaner-info span{
+    position: relative;
+    bottom: 20px;
+    left: 5rem;
+    color: white
+}
+.reach{
+    margin-left: 10rem;
+    position: relative;
+    top: 16rem;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 0px;
+    margin: 0 ;
+    margin-left: 45rem;
+    margin-top: 0;
+    background-color: transparent;
+    position: relative;
+    bottom: 3rem;
+}
+.formgroup{
+    width: 90%;
+    margin-top: 1.5rem;
+    margin-left: 15px;
+
+}
+.formgroup input, .formgroup textarea{
+    width: 90%;
+    padding: 7px;
+    border: 1px solid ;
+    margin-top: 5px;
+    border-radius: 40px;
+    background-color: transparent;
+    font-size: 1rem;
+   
+}
+
+#message{
+    border-radius: 20px;
+}
+
+textarea{
+    resize: vertical;
+}
+.container button{
+    width: 10rem;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+    color: white;
+    background-color: rgb(24, 168, 216);
+    border-radius:  40px ;
+}
+.container button:hover{
+    background-color: rgb(12, 155, 203);
+    cursor: pointer;
+}
+.bi-telephone-fill, .bi-house-fill, .email-icon{
+    width: 25px;
+    fill: rgb(42, 174, 219);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 40px;
+}
+.email-parent, .phone-parent, .address-parent{
+    font-size: 1.3rem;
+}
+footer{
+    margin-top: 3rem;
+    
+}
+footer h3{
+    text-align: center;
+    color: white;
+   position: relative;
+   top: 0.5rem;
+   font-size: 1.5rem;
+}
+
+footer svg{
+    padding: 0.4rem;
+    color: white;
+    width: 30px;
+    padding-bottom: 1rem;
+}
+footer div p{
+    color: white;
+    text-align: center;
+  margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+}
+
+
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    nav{
+        display: inline-block;
+        
+    }
+    nav label{
+        position: relative;
+        left: 1rem;
+    }
+
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+        color: rgb(24, 168, 216);
+    }
+  
+    nav{
+        background: white;
+        height: 4rem;
+        position: fixed;
+
+
+
+    }
+    .sign-btn{
+        display: none;
+    }
+   nav ul{
+        position: fixed;
+        width: 90%;
+        height: 100vh;
+        background: rgb(24, 168, 216);
+        top: 2.8rem;
+        left: 100%;
+        text-align: center;
+        transition: all .5s;
+        margin-right: auto;
+        margin-left: auto;
+    
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        right: 6.5rem;
+        position: relative;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+    }
+    a:hover,a.active{
+        background: none;
+        color: gray;
+    }
+    #check:checked~ ul{
+        left: 0;
+    }
+
 }
