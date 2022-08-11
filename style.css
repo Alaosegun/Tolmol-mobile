@@ -96,7 +96,7 @@ a.active,a:hover{
 }
 .landing-area{
     position: relative;
-    top: 10rem;
+    top: 8rem;
     margin-bottom: 10rem;
 }
 .landing-area img{
@@ -116,7 +116,7 @@ a.active,a:hover{
 }
 .landing-text h1{
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .circle{
