@@ -20,13 +20,21 @@ main{
 }
 
 nav{
-  
+
 }
 nav label{
     color: rgb(24, 168, 216);
-    font-size: 2rem;
+
+    font-size: 1.7rem;
     padding-left: 1rem;
     font-family: noto sans ;
+
+}
+.nav-label2{
+    font-size: 0.8rem;
+    padding-left: 2.3rem;
+    margin-top: 0.2rem;
+    color: gray;
 }
 nav{
     display: flex;
@@ -492,6 +500,12 @@ footer div p{
         padding-left: 11rem;
         font-family: noto sans ;
     }
+    .nav-label2{
+        font-size: 1rem;
+        margin-left: 9.4rem;
+        margin-top: 0;
+        color: gray;
+    }
     .landing-area{
         display: flex;
         flex-direction: row-reverse;
@@ -931,8 +945,26 @@ footer div p{
     color: white;
     text-align: center;
   margin: 0 auto;
-    padding-bottom: 1rem;
+    padding-bottom: 0.7rem;
 }
+/* .container{
+    display: flex;
+    overflow-x: scroll;
+    padding: 24px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+   
+}
+.container .item{
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    background-color: rgb(39, 154, 192);
+    color: white;
+} */
 
 }
 
