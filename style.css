@@ -1024,9 +1024,9 @@ footer div p{
     nav ul li{
         display: block;
         margin: 50px 0;
-        right: 3.2rem;
+        right: 3.6rem;
         position: relative;
-        line-height: 2.3rem;
+        line-height: 2rem;
         text-transform: uppercase;
     }
     nav ul li a{
