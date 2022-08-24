@@ -239,8 +239,8 @@ article .img2{
     text-align: center;
 }
 .pricediv1, .pricediv2, .pricediv3{
-    width: 15rem;
-    height: 29rem;
+    width: 75%;
+    /* height: 29rem; */
     background-color: rgb(42, 174, 219);
     border-radius: 10px;
     gap: 1px;
@@ -256,17 +256,21 @@ article .img2{
     color: white;
     position: relative;
     bottom: 1.5rem;
-    right: 1em;
+    right: 2rem;
+    width: 100%;
    
 }
 .pricediv1 ol, .pricediv2 ol, .pricediv3 ol li{
     list-style: none;
+   
+
 }
 .pricediv1 h3, .pricediv2 h3, .pricediv3 h3{
     font-size: 2rem;
     text-align: center;
     padding-top: 1rem;
     color: white;
+   
 }
 .smallcircle{
     width: 6rem;
@@ -274,7 +278,9 @@ article .img2{
     border-radius: 50px;
     background-color: white; 
     box-shadow:5px 5px 5px  rgb(79, 79, 79);
-    margin-left: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     position: relative;
     bottom: 1.5rem;
 }
@@ -291,14 +297,16 @@ article .img2{
     left: 20px;
 }
 .getstarted{
-    width: 9.2rem;
+    width: 70%;
+    height: 3.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     background-color: white;
     border-radius: 40px;
     position: relative;
     bottom: 1.5rem;
-  margin-left: 3rem;
     font-size: 1.3rem;
-    padding: 0.5rem;
     border: none;
     color: rgb(39, 154, 192);
 }
@@ -438,7 +446,7 @@ textarea{
     resize: vertical;
 }
 .container button{
-    width:13rem;
+    width: 70%;
     border: none;
     padding: 10px;
     font-size: 20px;
